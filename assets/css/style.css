@@ -1,7 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Roboto:wght@300;400;500;700;900&display=swap');
 
+
+/* ----------------------------------------------- Colours */
+
+.bg-color-name-title {
+    background-color: #676767;
+}
+
+/* ----------------------------------------------- Heading */
+
 header {
     margin: 0;
+}
+
+.heading {
+    margin-left: 50px;
 }
 
 .logo {
@@ -13,4 +26,21 @@ header {
     transition: all .5s ease-in-out;
     -moz-transition: all .5s ease-in-out;
     -webkit-transition: all .5s ease-in-out;
+}
+
+.name {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 46px;
+    margin-top: 50px;
+    color: #ffffff;
+}
+
+.title {
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 500;
+    font-size: 28px;
+    margin-top: 20px;
+    margin-bottom: 90px;
+    color: #ffffff;
 }
