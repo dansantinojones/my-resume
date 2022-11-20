@@ -1,15 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" type="text/css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css"
+        integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("JovL138uGSXgizZE3");
+        })();
+    </script>
     <title>Dan</title>
 </head>
+
 <body>
     <header>
         <div class="row no-gutters">
@@ -27,16 +39,20 @@
                     <div class="col">
                         <ul id="nav" class="list-inline menucontainer">
                             <li class="col-6 col-sm-3 ui-menu-color-home list-inline-item menuitem">
-                                <a href="index.html" class="hvr-sweep-to-top"><i class="fa fa-home" aria-hidden="true"></i><span>Home</span></a>
+                                <a href="index.html" class="hvr-sweep-to-top"><i class="fa fa-home"
+                                        aria-hidden="true"></i><span>Home</span></a>
                             </li>
                             <li class="col-6 col-sm-3 ui-menu-color-resume list-inline-item menuitem">
-                                <a href="resume.html" class="hvr-sweep-to-top"><i class="fa fa-graduation-cap" aria-hidden="true"></i><span>Resume</span></a>
+                                <a href="resume.html" class="hvr-sweep-to-top"><i class="fa fa-graduation-cap"
+                                        aria-hidden="true"></i><span>Resume</span></a>
                             </li>
                             <li class="col-6 col-sm-3 ui-menu-color-contact list-inline-item menuitem">
-                                <a href="contact.html" class="hvr-sweep-to-top"><i class="fa fa-comment" aria-hidden="true"></i><span>Contact</span></a>
+                                <a href="contact.html" class="hvr-sweep-to-top"><i class="fa fa-comment"
+                                        aria-hidden="true"></i><span>Contact</span></a>
                             </li>
                             <li class="col-6 col-sm-3 ui-menu-color-download list-inline-item menuitem">
-                                <a href="#" class="hvr-sweep-to-top"><i class="fa fa-download" aria-hidden="true"></i><span>Download</span></a>
+                                <a href="#" class="hvr-sweep-to-top"><i class="fa fa-download"
+                                        aria-hidden="true"></i><span>Download</span></a>
                             </li>
                         </ul>
                     </div>
@@ -52,10 +68,12 @@
                 <h5 class="uppercase text-center">Get in touch and let's work together!</h5>
 
                 <div class="center-form">
-                    <form>
-                        <input type="text" name="name" id="fullname" class="form-control" placeholder="Name" required/>
-                        <input type="email" name="email" id="emailaddress" class="form-control" placeholder="Email" required/>
-                        <textarea name="projectsummary" id="projectsummary" class="form-control" cols="30" rows="5" placeholder="Project Description"></textarea>
+                    <form onsubmit="return sendMail(this);">
+                        <input type="text" name="name" id="fullname" class="form-control" placeholder="Name" required />
+                        <input type="email" name="emailaddress" id="emailaddress" class="form-control"
+                            placeholder="Email" required />
+                        <textarea name="projectsummary" id="projectsummary" class="form-control" cols="30" rows="5"
+                            placeholder="Project Description"></textarea>
                         <div class="form-row text-center">
                             <div class="col">
                                 <button type="submit" class="btn btn-secondary">Send Project Request</button>
@@ -83,7 +101,8 @@
             <div class="col-sm-4">
                 <h5 class="uppercase general-sub">About</h5>
                 <p class="inline-block">
-                    Full Stack Developer with a Marketing degree. Skilled in designing, building and Marketing your dream webiste.
+                    Full Stack Developer with a Marketing degree. Skilled in designing, building and Marketing your
+                    dream webiste.
                 </p>
             </div>
             <div class="col-sm-4">
@@ -106,5 +125,7 @@
         </div>
 
     </footer>
+    <script src="assets/js/sendEmail.js"></script>
 </body>
+
 </html>
